@@ -16,6 +16,13 @@ public class Author {
         this.birthDate = birthDate;
     }
 
+    public Author(Integer id, String firstName, String lastName, Date birthDate) {
+        this.id = id;
+        this.firstName = firstName;
+        this.lastName = lastName;
+        this.birthDate = birthDate;
+    }
+
     public Integer getId() {
         return id;
     }
