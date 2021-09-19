@@ -10,8 +10,8 @@ public class BookDatabaseManager {
     public DataSource connect() throws SQLException {
         PGSimpleDataSource dataSource = new PGSimpleDataSource();
         dataSource.setDatabaseName("books");
-        dataSource.setUser("postgres");
-        dataSource.setPassword("postgres");
+        dataSource.setUser("codecool");
+        dataSource.setPassword("password");
 
         System.out.println("Trying to connect...");
         dataSource.getConnection().close();

@@ -10,6 +10,8 @@ public class AuthorDaoLocal implements AuthorDao {
 
     @Override
     public void add(Author author) {
+        if (author == null)
+            throw new IllegalArgumentException("author doesnt exist");
         author.setId(new Random().nextInt());
         storage.add(author);
     }
